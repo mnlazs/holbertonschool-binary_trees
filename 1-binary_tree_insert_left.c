@@ -2,11 +2,11 @@
 /*
  * binary_tree_t - funtion that insert a node in the left son
  * @parent: puntero 
- * @value: valor para almacenar el nuevo nodo
+ * @n: valor para almacenar el nuevo nodo
  * Return: new_node
  */
 
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int n)
 {
     if (parent == NULL) {
         return NULL;
@@ -16,7 +16,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
     if (new_node == NULL) {
         return NULL;
     }
-    new_node->value = value;
+    new_node->n = n;
     new_node->left = parent->left;
     new_node->right = NULL;
 
