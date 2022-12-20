@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 /**
  * binary_tree_preorder -
- * @tree: pointer to node to root 
+ * @tree: pointer to node to root
  * @func: pointer to funtion
  * Return: void
  */
